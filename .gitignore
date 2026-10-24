@@ -1,0 +1,22 @@
+# File locali e credenziali
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+config.local.php
+*.log
+*.sqlite
+*.sqlite-*
+
+# I database vengono creati sul computer di chi avvia il progetto.
+/consegna/storage/*
+!/consegna/storage/.gitkeep
+/materiali-sviluppo/storage/*
+!/materiali-sviluppo/storage/.gitkeep
+
+# Copie locali e file intermedi, conservati fuori dalla cronologia Git.
+/materiali-sviluppo/archivio/
+/materiali-sviluppo/file-sistema/
+/materiali-sviluppo/relazione/output/

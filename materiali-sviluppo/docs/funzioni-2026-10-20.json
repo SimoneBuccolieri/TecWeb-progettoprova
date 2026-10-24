@@ -1,0 +1,12 @@
+{
+  "data": "2026-10-20",
+  "runtime": "PHP 8.5 / SQLite",
+  "controlli_http": 42,
+  "esito": "superati",
+  "database": "temporaneo",
+  "confronto_html_stati": 28,
+  "setup_ripetibile": true,
+  "export_identico": true,
+  "mariadb_ripetuto": false,
+  "lettore_schermo_ripetuto": false
+}

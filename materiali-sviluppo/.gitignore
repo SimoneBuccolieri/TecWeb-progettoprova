@@ -1,0 +1,6 @@
+/storage/*
+!/storage/.gitkeep
+!/storage/.gitkeep
+.env
+config.local.php
+__pycache__/

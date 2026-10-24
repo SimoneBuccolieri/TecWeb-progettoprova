@@ -1,0 +1,31 @@
+[
+  {
+    "file": "desktop.css",
+    "result": {
+      "validity": "true",
+      "errorcount": "0",
+      "warningcount": "0",
+      "messages": []
+    }
+  },
+  {
+    "file": "print.css",
+    "result": {
+      "validity": "true",
+      "errorcount": "0",
+      "warningcount": "0",
+      "messages": []
+    }
+  },
+  {
+    "file": "mobile.css",
+    "result": {
+      "validity": "true",
+      "errorcount": "0",
+      "warningcount": "1",
+      "messages": [
+        "Due to their dynamic nature, CSS variables are currently not statically checked"
+      ]
+    }
+  }
+]

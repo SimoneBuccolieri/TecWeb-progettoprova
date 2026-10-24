@@ -1,0 +1,25 @@
+<li>
+    <article class="card">
+        <img src="images/{{immagine}}" alt="" width="800" height="520" loading="lazy" />
+        <div class="card-content">
+            <p class="eyebrow">{{localita}}</p>
+            <h3><a href="escursione.php?id={{id}}">{{titolo}}</a></h3>
+            <p><span class="badge {{difficolta}}">{{nome_difficolta}}</span></p>
+            <dl class="card-facts">
+                <div>
+                    <dt>Lunghezza</dt>
+                    <dd>{{lunghezza}} km</dd>
+                </div>
+                <div>
+                    <dt>Durata</dt>
+                    <dd>{{durata}}</dd>
+                </div>
+                <div>
+                    <dt>Dislivello</dt>
+                    <dd>+{{dislivello}} m</dd>
+                </div>
+            </dl>
+            <a class="card-link" href="escursione.php?id={{id}}">Dettagli del percorso<span class="sr-only">: {{titolo}}</span></a>
+        </div>
+    </article>
+</li>

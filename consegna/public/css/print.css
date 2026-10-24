@@ -1,0 +1,85 @@
+/* Versione stampabile: contenuti su una colonna, senza comandi. */
+body {
+    margin: 1cm;
+    color: black;
+    background: white;
+    font: 11pt/1.5 Arial, sans-serif;
+    overflow-wrap: anywhere;
+}
+
+.site-header nav, #menu-toggle, .skip, .sr-only, form,
+.filters, .quick-search, .actions, .button, .card-link,
+.site-footer nav {
+    display: none;
+}
+
+h1, h2, h3 {
+    break-after: avoid;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+a, a:visited {
+    color: black;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 5cm;
+}
+
+.brand img {
+    width: 1cm;
+}
+
+.brand small {
+    display: block;
+}
+
+.breadcrumb ol, .breadcrumb li {
+    display: inline;
+    padding: 0;
+}
+
+.breadcrumb li + li::before {
+    content: ' / ';
+}
+
+.cards {
+    list-style: none;
+    padding: 0;
+}
+
+.card, .review {
+    margin-bottom: 1cm;
+    border-bottom: 1px solid black;
+    break-inside: avoid;
+}
+
+dd {
+    margin-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.3cm;
+    text-align: left;
+}
+
+.site-footer {
+    margin-top: 1cm;
+    border-top: 1px solid black;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{titolo}} | Passo Verde</title>
+    <meta name="description" content="{{descrizione}}" />
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/desktop.css" media="screen" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 800px)" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <script src="javascript/main.js" defer="defer"></script>
+</head>
+<body id="inizio">
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
+    <a class="brand" href="index.php"><img src="images/logo.svg" alt="" width="46" height="46" /><span>Passo Verde<small>Portale di escursioni e trekking</small></span><span class="sr-only">, pagina iniziale</span></a>
+    <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu" hidden="hidden">Menu <span aria-hidden="true">☰</span></button>
+    <nav aria-label="Navigazione principale" id="menu">
+        <ul>
+            {{menu}}
+        </ul>
+    </nav>
+</header>
+<nav class="breadcrumb" aria-label="Percorso nel sito">
+    <div>Ti trovi in:
+        <ol>
+            {{percorso}}
+        </ol>
+    </div>
+</nav>
+<main id="contenuto" tabindex="-1">
+    {{avviso}}

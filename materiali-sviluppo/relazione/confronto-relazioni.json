@@ -1,0 +1,30 @@
+{
+  "metodo": "Testo del corpo; minuscole, normalizzazione NFKC e token alfanumerici; confronto esaustivo di sequenze contigue di 12 parole. Estrazione PDF soggetta a parole unite o spezzate. Non è un rilevatore semantico di plagio.",
+  "parole_corpo_passoverde": 4443,
+  "confronti": [
+    {
+      "file": "guida_progetto/fonti_esempi/Edil_Scavi_relazione.pdf",
+      "pagine": 20,
+      "sequenze_condivise_di_12_parole": 0,
+      "estratti": []
+    },
+    {
+      "file": "guida_progetto/fonti_esempi/LuzzAuto_relazione.pdf",
+      "pagine": 11,
+      "sequenze_condivise_di_12_parole": 0,
+      "estratti": []
+    },
+    {
+      "file": "guida_progetto/fonti_esempi/Biblioteca_Luzzatti_relazione.pdf",
+      "pagine": 14,
+      "sequenze_condivise_di_12_parole": 0,
+      "estratti": []
+    },
+    {
+      "file": "esempio progetto anno scorso/Progetto_TecWeb/Relazione/Relazione_TecWeb.pdf",
+      "pagine": 16,
+      "sequenze_condivise_di_12_parole": 0,
+      "estratti": []
+    }
+  ]
+}

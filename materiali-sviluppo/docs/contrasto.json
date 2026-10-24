@@ -1,0 +1,37 @@
+{
+  "testo": {
+    "bianco": 11.84,
+    "sfondo": 10.76,
+    "chiaro": 9.85
+  },
+  "verde": {
+    "bianco": 9.55,
+    "sfondo": 8.67,
+    "chiaro": 7.94
+  },
+  "visitato": {
+    "bianco": 8.31,
+    "sfondo": 7.55,
+    "chiaro": 6.91
+  },
+  "errore": {
+    "bianco": 7.96,
+    "sfondo": 7.23,
+    "chiaro": 6.61
+  },
+  "focus": {
+    "bianco": 5.73,
+    "sfondo": 5.21,
+    "chiaro": 4.77
+  },
+  "bordo_input": {
+    "bianco": 3.8,
+    "sfondo": 3.46,
+    "chiaro": 3.16
+  },
+  "pulsanti_bianchi": {
+    "normale": 9.55,
+    "hover": 12.65,
+    "elimina": 7.96
+  }
+}

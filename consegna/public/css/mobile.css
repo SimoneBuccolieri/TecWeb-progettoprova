@@ -1,0 +1,64 @@
+/* Questo foglio viene caricato fino a 800px. */
+h1 {
+    font-size: 1.75rem;
+}
+
+.site-header {
+    gap: 0.75rem;
+}
+
+.brand {
+    font-size: 1.25rem;
+}
+
+#menu-toggle:not([hidden]) {
+    display: block;
+}
+
+#menu {
+    width: 100%;
+}
+
+#menu ul {
+    display: block;
+}
+
+#menu a {
+    border-top: 1px solid var(--bordo);
+}
+
+#menu.collapsed {
+    display: none;
+}
+
+.hero, .detail-grid, .review-layout, .about-grid, .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cards {
+    grid-template-columns: 1fr 1fr;
+}
+
+.quick-search form, .filters, .site-footer {
+    display: block;
+}
+
+.quick-search button, .filters button {
+    margin-top: 1rem;
+}
+
+.filters > a {
+    display: block;
+    margin-top: 1rem;
+}
+
+.site-footer > div, .site-footer nav {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

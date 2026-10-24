@@ -1,0 +1,121 @@
+[
+  {
+    "path": "/index.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 13
+  },
+  {
+    "path": "/escursioni.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 15
+  },
+  {
+    "path": "/escursione.php?id=1",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 9
+  },
+  {
+    "path": "/registrazione.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 13
+  },
+  {
+    "path": "/login.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 11
+  },
+  {
+    "path": "/chi-siamo.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 9
+  },
+  {
+    "path": "/escursione.php?id=999999",
+    "status": 404,
+    "errors": [],
+    "warnings": [],
+    "info": 8
+  },
+  {
+    "path": "/area-personale.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 9
+  },
+  {
+    "path": "/escursione.php?id=1",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 14
+  },
+  {
+    "path": "/admin.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 9
+  },
+  {
+    "path": "/gestisci-escursione.php",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 15
+  },
+  {
+    "path": "/elimina-escursione.php?id=1",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 10
+  },
+  {
+    "path": "/escursioni.php?q=nessun-risultato",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 9
+  },
+  {
+    "path": "/gestisci-escursione.php?id=1",
+    "status": 200,
+    "errors": [],
+    "warnings": [],
+    "info": 15
+  },
+  {
+    "path": "registrazione-errori",
+    "status": 422,
+    "errors": [],
+    "warnings": [],
+    "info": 13
+  },
+  {
+    "path": "recensione-errori",
+    "status": 422,
+    "errors": [],
+    "warnings": [],
+    "info": 14
+  },
+  {
+    "path": "escursione-errori",
+    "status": 422,
+    "errors": [],
+    "warnings": [],
+    "info": 15
+  }
+]

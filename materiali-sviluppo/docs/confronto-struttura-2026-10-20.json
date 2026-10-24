@@ -1,0 +1,41 @@
+{
+  "data": "2026-10-20",
+  "archivio": "prima-riorganizzazione-2026-10-20.zip",
+  "stati": 28,
+  "confronto": "codici HTTP, struttura, attributi e testi HTML",
+  "esclusioni": [
+    "token CSRF casuali",
+    "spazi di formattazione"
+  ],
+  "esito": "uguali",
+  "pagine": [
+    "/index.php#0",
+    "/escursioni.php#1",
+    "/escursioni.php?q=nessun-risultato#2",
+    "/escursione.php?id=1#3",
+    "/registrazione.php#4",
+    "/login.php#5",
+    "/chi-siamo.php#6",
+    "/404.php#7",
+    "/area-personale.php#8",
+    "/escursione.php?id=1#9",
+    "/admin.php#10",
+    "/gestisci-escursione.php#11",
+    "/gestisci-escursione.php?id=1#12",
+    "/elimina-escursione.php?id=1#13",
+    "login-errors",
+    "forbidden-admin",
+    "invalid-id",
+    "invalid-filter",
+    "register-errors",
+    "review-errors",
+    "editor-errors",
+    "review-posted",
+    "confirm-review-user",
+    "confirm-review-admin",
+    "saved-detail",
+    "populated-account",
+    "populated-admin",
+    "existing-review-errors"
+  ]
+}
