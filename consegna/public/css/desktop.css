@@ -78,6 +78,16 @@ main {
     text-align: center;
 }
 
+/* Righe di testo brevi per una lettura più comoda. */
+.reading {
+    max-width: 70ch;
+}
+
+/* Le abbreviazioni non devono sembrare link: niente sottolineatura. */
+abbr[title] {
+    text-decoration: none;
+}
+
 /* Aiuti alla navigazione: il link di salto compare al focus. */
 .sr-only, .skip {
     position: absolute;

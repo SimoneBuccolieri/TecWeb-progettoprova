@@ -52,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $title = 'Accedi';
+$description = 'Accedi a Passo Verde per salvare le escursioni preferite e scrivere recensioni.';
 require dirname(__DIR__) . '/src/templates/header.php';
 require dirname(__DIR__) . '/src/pages/login.php';
 require dirname(__DIR__) . '/src/templates/footer.php';

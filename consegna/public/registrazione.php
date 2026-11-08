@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $title = 'Registrazione';
+$description = 'Crea un account gratuito su Passo Verde per salvare escursioni tra i preferiti e recensire i percorsi.';
 require dirname(__DIR__) . '/src/templates/header.php';
 require dirname(__DIR__) . '/src/pages/register.php';
 require dirname(__DIR__) . '/src/templates/footer.php';

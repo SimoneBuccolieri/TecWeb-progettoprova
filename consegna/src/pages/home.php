@@ -9,7 +9,7 @@
 </section>
 <section class="quick-search" aria-labelledby="ricerca-titolo">
     <h2 id="ricerca-titolo">Cerca un’escursione</h2>
-    <form action="escursioni.php" method="get">
+    <form action="escursioni.php" method="get" role="search">
         <div>
             <label for="q">Nome o località</label>
             <input id="q" name="q" type="search" maxlength="100" placeholder="Es. valle, prati, rifugio" />

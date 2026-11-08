@@ -3,6 +3,9 @@ require_once __DIR__ . '/database.php';
 
 date_default_timezone_set('Europe/Rome');
 ini_set('session.use_strict_mode', '1');
+// WCAG 2.2.1: nessun limite di tempo sotto le 20 ore per compilare i moduli.
+const DURATA_SESSIONE = 72000;
+ini_set('session.gc_maxlifetime', (string)DURATA_SESSIONE);
 session_name('passoverde_session');
 session_set_cookie_params([
     'httponly' => true,
@@ -18,7 +21,7 @@ header('Referrer-Policy: strict-origin-when-cross-origin');
 header("Content-Security-Policy: default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'");
 header('Cache-Control: no-store');
 
-if (isset($_SESSION['last_seen']) && time() - $_SESSION['last_seen'] > 3600) {
+if (isset($_SESSION['last_seen']) && time() - $_SESSION['last_seen'] > DURATA_SESSIONE) {
     $_SESSION = [];
     session_regenerate_id(true);
 }
@@ -147,14 +150,34 @@ function hike($id)
     return $hike;
 }
 
+// Restituisce HTML: contiene solo numeri interi e abbreviazioni fisse.
 function duration($minutes)
 {
-    $text = intdiv($minutes, 60) . ' h';
+    $text = intdiv($minutes, 60) . ' <abbr title="ore">h</abbr>';
     $remaining = $minutes % 60;
     if ($remaining > 0) {
-        $text .= ' ' . $remaining . ' min';
+        $text .= ' ' . $remaining . ' <abbr title="minuti">min</abbr>';
     }
     return $text;
+}
+
+// Immagini selezionabili per le escursioni: etichetta nel modulo e testo alternativo.
+function photos()
+{
+    return [
+        'montagne.jpg' => [
+            'label' => 'Valle e montagne',
+            'alt' => 'Cime rocciose illuminate dal sole, con un escursionista in lontananza'
+        ],
+        'cime.jpg' => [
+            'label' => 'Cime rocciose',
+            'alt' => 'Pareti rocciose avvolte dalle nuvole sopra un ghiaione, con un escursionista'
+        ],
+        'prati.jpg' => [
+            'label' => 'Prati alpini',
+            'alt' => 'Prato fiorito con una staccionata, abeti e cime dolomitiche sullo sfondo'
+        ]
+    ];
 }
 
 function decimal($number)

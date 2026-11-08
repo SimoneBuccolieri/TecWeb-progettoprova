@@ -2,7 +2,7 @@
     <h1>Le escursioni</h1>
     <p>Consulta il catalogo oppure cerca un percorso usando i filtri.</p>
 </header>
-<form class="filters" action="escursioni.php" method="get">
+<form class="filters" action="escursioni.php" method="get" role="search" aria-label="Filtra le escursioni">
     <div>
         <label for="q">Cerca per nome o località</label>
         <input type="search" name="q" id="q" value="<?= e($q) ?>" maxlength="100" placeholder="Es. valle, prati, rifugio" />
