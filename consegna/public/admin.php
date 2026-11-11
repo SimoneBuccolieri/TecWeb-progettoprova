@@ -6,6 +6,7 @@ $hikes = $database->tutteEscursioni();
 $reviews = $database->recensioniDaModerare();
 
 $title = 'Amministrazione';
+$description = 'Area amministratore: gestione del catalogo delle escursioni e moderazione delle recensioni.';
 require dirname(__DIR__) . '/src/templates/header.php';
 require dirname(__DIR__) . '/src/pages/admin.php';
 require dirname(__DIR__) . '/src/templates/footer.php';

@@ -4,21 +4,21 @@
     <p><span class="badge <?= e($hike['difficulty']) ?>"><?= e(ucfirst($hike['difficulty'])) ?></span> <a href="#recensioni"><?= $average ? e($average).' su 5 · '.count($reviews).' recensioni' : 'Nessuna recensione: lascia la prima' ?></a></p>
 </header>
 <div class="detail-grid">
-    <img class="detail-photo" src="images/<?= e($hike['image']) ?>" alt="Paesaggio montano illustrativo; non rappresenta un itinerario reale" width="1600" height="1067" />
+    <img class="detail-photo" src="images/<?= e($hike['image']) ?>" alt="<?= e(photos()[$hike['image']]['alt'] ?? '') ?>" width="1600" height="1067" />
     <aside class="trail-summary" aria-labelledby="in-breve">
         <h2 id="in-breve">Il percorso in breve</h2>
         <dl>
             <div>
                 <dt>Lunghezza</dt>
-                <dd><?= decimal($hike['distance']) ?> km</dd>
+                <dd><?= decimal($hike['distance']) ?> <abbr title="chilometri">km</abbr></dd>
             </div>
             <div>
                 <dt>Durata</dt>
-                <dd><?= e(duration((int)$hike['duration'])) ?></dd>
+                <dd><?= duration((int)$hike['duration']) ?></dd>
             </div>
             <div>
                 <dt>Dislivello positivo</dt>
-                <dd><?= (int)$hike['elevation'] ?> m</dd>
+                <dd><?= (int)$hike['elevation'] ?> <abbr title="metri">m</abbr></dd>
             </div>
             <div>
                 <dt>Difficoltà</dt>
@@ -32,7 +32,7 @@
             <input type="hidden" name="operation" value="<?= $saved ? 'remove' : 'add' ?>" />
             <button type="submit"><?= $saved ? 'Rimuovi dai preferiti' : 'Salva tra i preferiti' ?> <span aria-hidden="true"><?= $saved ? '♥' : '♡' ?></span></button>
         </form>
-        <?php else: ?><a class="button" href="login.php">Accedi per salvare ♡</a><?php endif; ?>
+        <?php else: ?><a class="button" href="login.php">Accedi per salvare <span aria-hidden="true">♡</span></a><?php endif; ?>
         <p class="hint">Dati dimostrativi, non indicazioni per un’uscita reale.</p>
         <a href="chi-siamo.php#difficolta">Informazioni sulle difficoltà</a>
     </aside>

@@ -1,5 +1,5 @@
 <header class="page-intro">
-    <p class="eyebrow">AREA AMMINISTRATORE</p>
+    <p class="eyebrow">Area amministratore</p>
     <h1>Gestisci Passo Verde</h1>
     <p>Aggiungi e aggiorna i percorsi, oppure modera le recensioni della comunità.</p>
 </header>

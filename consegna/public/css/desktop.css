@@ -44,8 +44,16 @@ a {
     text-underline-offset: 0.2em;
 }
 
+/* Link visitati: colore e sfondo diversi, per non affidarsi al solo colore. */
 a:visited {
     color: #694635;
+    background-color: #ead3c0;
+}
+
+/* Nei menu lo stato "visitato" non serve: la pagina corrente è già indicata. */
+#menu a:visited, .breadcrumb a:visited, .site-footer a:visited, .brand:visited {
+    color: var(--verde);
+    background-color: transparent;
 }
 
 a:hover {
@@ -76,6 +84,16 @@ main {
 
 .page-intro {
     text-align: center;
+}
+
+/* Righe di testo brevi per una lettura più comoda. */
+.reading {
+    max-width: 70ch;
+}
+
+/* Le abbreviazioni non devono sembrare link: niente sottolineatura. */
+abbr[title] {
+    text-decoration: none;
 }
 
 /* Aiuti alla navigazione: il link di salto compare al focus. */
@@ -344,6 +362,7 @@ button, .button {
 
 .button:visited {
     color: white;
+    background-color: var(--verde);
 }
 
 button:hover, .button:hover {

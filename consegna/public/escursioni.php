@@ -10,6 +10,7 @@ if (!in_array($difficulty, ['', 'facile', 'media', 'difficile'], true)) {
 $hikes = $database->cercaEscursioni($q, $difficulty);
 
 $title = 'Escursioni';
+$description = 'Catalogo delle escursioni: cerca un percorso per nome, località o difficoltà e confronta lunghezza, durata e dislivello.';
 require dirname(__DIR__) . '/src/templates/header.php';
 require dirname(__DIR__) . '/src/pages/catalog.php';
 require dirname(__DIR__) . '/src/templates/footer.php';

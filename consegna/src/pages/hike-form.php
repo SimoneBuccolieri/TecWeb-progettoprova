@@ -41,8 +41,8 @@
         <label for="image">Immagine illustrativa</label>
         <select id="image" name="image" required="required"<?= field_error($errors,'image') ?>>
             <option value="">Scegli un’immagine</option>
-            <?php foreach (['montagne.jpg'=>'Valle e montagne','cime.jpg'=>'Cime rocciose','prati.jpg'=>'Prati alpini'] as $file=>$label): ?>
-            <option value="<?= e($file) ?>"<?= $data['image']===$file ? ' selected="selected"' : '' ?>><?= e($label) ?></option>
+            <?php foreach (photos() as $file=>$photo): ?>
+            <option value="<?= e($file) ?>"<?= $data['image']===$file ? ' selected="selected"' : '' ?>><?= e($photo['label']) ?></option>
             <?php endforeach; ?>
         </select>
         <?php error_text($errors,'image'); ?>

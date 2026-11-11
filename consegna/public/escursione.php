@@ -59,7 +59,12 @@ if ($reviews) {
 $title = $hike['title'];
 $active = 'escursioni.php';
 $parent = ['escursioni.php', 'Escursioni'];
-$description = mb_substr($hike['description'], 0, 160);
+// Massimo 145 caratteri, tagliando all'ultima parola intera.
+$description = preg_replace('/\s+/', ' ', $hike['description']);
+if (mb_strlen($description) > 145) {
+    $description = mb_substr($description, 0, 144);
+    $description = mb_substr($description, 0, mb_strrpos($description, ' ') ?: 144) . '…';
+}
 require dirname(__DIR__) . '/src/templates/header.php';
 require dirname(__DIR__) . '/src/pages/detail.php';
 require dirname(__DIR__) . '/src/templates/footer.php';

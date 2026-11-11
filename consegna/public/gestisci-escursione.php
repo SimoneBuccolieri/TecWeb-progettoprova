@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (filter_var($data['elevation'], FILTER_VALIDATE_INT, ['options' => ['min_range' => 0, 'max_range' => 5000]]) === false) {
         $errors['elevation'] = 'Il dislivello deve essere un numero intero tra 0 e 5000.';
     }
-    if (!in_array($data['image'], ['montagne.jpg', 'cime.jpg', 'prati.jpg'], true)) {
+    if (!array_key_exists($data['image'], photos())) {
         $errors['image'] = 'Scegli una delle immagini disponibili.';
     }
 

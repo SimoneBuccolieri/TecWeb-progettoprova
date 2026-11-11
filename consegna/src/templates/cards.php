@@ -13,7 +13,7 @@ if (!$hikes) {
             '{{difficolta}}' => e($item['difficulty']),
             '{{nome_difficolta}}' => e(ucfirst($item['difficulty'])),
             '{{lunghezza}}' => decimal($item['distance']),
-            '{{durata}}' => e(duration((int)$item['duration'])),
+            '{{durata}}' => duration((int)$item['duration']),
             '{{dislivello}}' => (string)(int)$item['elevation']
         ]);
         $elenco .= $scheda;
